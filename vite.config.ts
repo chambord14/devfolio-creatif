@@ -6,6 +6,9 @@ import { componentTagger } from "lovable-tagger";
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => ({
   base: '/devfolio-creatif/', // ← nom  de dépôt GitHub
+  build: {
+    outDir: 'docs', // ← build directement dans docs
+  },
   server: {
     host: "::",
     port: 8080,
