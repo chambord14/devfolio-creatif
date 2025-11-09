@@ -6,9 +6,11 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
+    "postbuild": "cp docs/index.html docs/404.html",
     "build:dev": "vite build --mode development",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "deploy": "npm run build && npm run postbuild && git add docs/ && git commit -m 'Déploiement' && git push origin master"
   },
   "dependencies": {
     "@hookform/resolvers": "^3.10.0",

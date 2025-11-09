@@ -35,7 +35,7 @@ const Home = () => {
                       <ArrowRight className="ml-2 h-5 w-5" />
                     </Button>
                   </a>
-                  <a href="/cv_ANASSIDE.pdf" download>
+                  <a href={`${import.meta.env.BASE_URL}cv.pdf`} download>
                     <Button size="lg" variant="secondary">
                       <Download className="mr-2 h-5 w-5" />
                       Télécharger CV
