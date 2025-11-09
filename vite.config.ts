@@ -8,6 +8,11 @@ export default defineConfig(({ mode }) => ({
   base: '/devfolio-creatif/', // ← nom  de dépôt GitHub
   build: {
     outDir: 'docs', // ← build directement dans docs
+    rollupOptions: {
+      output: {
+        manualChunks: undefined
+      }
+    }
   },
   server: {
     host: "::",
